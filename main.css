@@ -1,7 +1,27 @@
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+	color: #ddd;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
 .octodex {
+	font-size: 11px;
 
 }
 
+.octodex img {
+	width: 250px;
+}
+
+.octodex ul {
+
+}
 .octocat{
 
 }
@@ -10,15 +30,24 @@
 
 }
 
-.image-number{
-
-}
-
-.image-caption{
-
-}
-
-.authors{
+.image-number {
 	
 }
 
+.image-caption {
+	font-weight: bold;
+}
+
+.image-caption img{
+	width: 20px;
+	border: none;
+	border-radius: 2px;
+}
+
+.authors{
+
+}
+
+img {
+	border: 1px solid #ddd;
+}
