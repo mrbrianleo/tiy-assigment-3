@@ -8,46 +8,60 @@ ul {
 	list-style: none;
 	color: #ddd;
 	font-family: Helvetica, Arial, sans-serif;
-}
-
-.octodex {
-	font-size: 11px;
-
-}
-
-.octodex img {
-	width: 250px;
-}
-
-.octodex ul {
-
-}
-.octocat{
-
-}
-
-.image-footer{
-
-}
-
-.image-number {
-	
-}
-
-.image-caption {
-	font-weight: bold;
-}
-
-.image-caption img{
-	width: 20px;
-	border: none;
-	border-radius: 2px;
-}
-
-.authors{
-
+	font-size: 10px;
 }
 
 img {
 	border: 1px solid #ddd;
+	border-radius: 2px;
 }
+
+.octocat {
+	display: inline-block;
+	padding-right: 10px;
+}
+
+.octocat img {
+	width: 250px;
+}
+
+.octocate img::after {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 100px 100px 0 100px;
+	border-color: #ddd transparent transparent transparent;
+
+}
+.image-footer > span::before {
+	content: "#";
+
+}
+
+.image-footer {
+	border-bottom: 1px solid #ddd;
+	font-weight: bold;
+	display: block;
+	text-align: right;
+}
+
+.image-number {
+	float: left;
+}
+
+.authors img{
+	width: 20px;
+	border: none;
+	border-radius: 2px;
+	float: right;
+}
+
+.triangle {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 100px 100px 0 100px;
+	border-color: #adadad transparent transparent transparent;
+}
+
+
