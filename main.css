@@ -23,16 +23,21 @@ img {
 
 .octocat img {
 	width: 250px;
+
 }
 
-.octocate img::after {
+.octocat > a::after {
 	width: 0;
 	height: 0;
 	border-style: solid;
-	border-width: 100px 100px 0 100px;
+	border-width: 5px 5px 5px;
 	border-color: #ddd transparent transparent transparent;
-
+	content: "";
+	position: relative;
+	top: 2px;
+	left: 242px;
 }
+
 .image-footer > span::before {
 	content: "#";
 
@@ -42,26 +47,35 @@ img {
 	border-bottom: 1px solid #ddd;
 	font-weight: bold;
 	display: block;
+	padding-bottom: 5px;
+	width: 255px;
+}
+
+.image-caption {
 	text-align: right;
+}
+
+.image-caption span, a{
+	line-height: 10px;
 }
 
 .image-number {
 	float: left;
+	position: relative;
+	top: 50%;
+	line-height: 22px;
+}
+
+.authors {
+	display: inline-block;
+	padding-left: 0;
 }
 
 .authors img{
 	width: 20px;
 	border: none;
 	border-radius: 2px;
-	float: right;
-}
-
-.triangle {
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 100px 100px 0 100px;
-	border-color: #adadad transparent transparent transparent;
+	vertical-align: middle;
 }
 
 
